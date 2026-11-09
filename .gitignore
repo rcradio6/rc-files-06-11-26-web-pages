@@ -1,0 +1,8 @@
+# Panel de administración local: no se sube a GitHub ni al hosting
+admin/
+# Basura del sistema
+.DS_Store
+Thumbs.db
+__pycache__/
+admin/
+*.pyc

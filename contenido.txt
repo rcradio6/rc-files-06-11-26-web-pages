@@ -1,0 +1,264 @@
+# ==========================================================================
+#  RC RADIO 107.7 FM — CONTENIDO EDITABLE DE LA PÁGINA
+# ==========================================================================
+#  ESTE ARCHIVO LO EDITA EL PANEL DE ADMINISTRACIÓN (carpeta admin). También puedes tocarlo a mano.
+#  Cómo se edita:
+#   • Cada línea es   clave: texto   → cambia SOLO el texto después de los dos puntos.
+#   • No cambies las claves (lo que está antes de los dos puntos).
+#   • Para resaltar en rojo una palabra, ponla entre asteriscos:  Escúchanos *En Vivo*
+#   • Las líneas que empiezan con # son comentarios y se ignoran.
+#   • Los enlaces van completos: mailto:..., tel:+505..., https://...
+#   • Si borras una línea, la página usa el texto original que trae su HTML.
+#   • Después de editar, sube este archivo al hosting y recarga la página (Ctrl+F5).
+# ==========================================================================
+
+
+# ======================================================================
+# TEXTOS COMUNES A TODAS LAS PÁGINAS
+# ======================================================================
+
+# --- Textos comunes (menú, pie de página, reproductor flotante)
+menu_marca: RC Radio *107.7 FM*
+menu_inicio: Inicio
+menu_sobre_nosotros: Sobre Nosotros
+menu_programacion: Programación
+menu_contacto: Contacto
+pie_marca: RC Radio *107.7 FM*
+footer_tag: Óyele... estás en la RC. Estelí, Nicaragua.
+pie_titulo_navegacion: Navegación
+pie_inicio: Inicio
+pie_sobre_nosotros: Sobre Nosotros
+pie_programacion: Programación
+pie_contacto: Contacto
+pie_titulo_contacto: Contacto
+pie_direccion: Dirección: Ministerio del Interior 1/2c al este
+pie_correo: Correo: contacto@rcradio1077.com
+pie_telefono: Tel: +505 2713 3308
+pie_celular: Cel: +505 5707 3840
+pie_derechos: © 2026 RC Radio Estelí 107.7 FM. Todos los derechos reservados. Estelí, Nicaragua.
+flotante_titulo: RC Radio 107.7 FM
+
+# ======================================================================
+# ENLACES
+# ======================================================================
+
+# --- Enlaces (correo, teléfonos, redes, app)
+enlace_descarga_app: https://github.com/rcradio6/RC-Radio-App/releases/download/1.0.0/com.teamrc.rcradioapp.apk
+enlace_facebook: https://www.facebook.com/rc1077
+enlace_instagram: https://www.instagram.com/rcradio_oficial107.7/
+enlace_tiktok: https://www.tiktok.com/@rc.radio.107.7.fm
+enlace_youtube: https://www.youtube.com/@RCRADIO107.7FM
+enlace_correo: mailto:contacto@rcradio1077.com
+enlace_telefono_cabina: tel:+505 2713-3308
+enlace_celular_cabina: tel:+505 5707-3840
+enlace_whatsapp: https://api.whatsapp.com/send/?phone=50557073840
+enlace_celular_negocios: tel:+505 5757-2455
+
+# --- Reproductor (texto que se desplaza)
+reproductor_prefijo: Estás escuchando:
+reproductor_programa_por_defecto: Radio Estelí 107.7 FM - La que te gusta
+
+# ======================================================================
+# PÁGINA: INICIO
+# ======================================================================
+
+# --- Título de la pestaña y descripción para buscadores
+titulo_inicio: RC Radio 107.7 FM Estelí — Inicio
+descripcion_inicio: RC Radio 107.7 FM, Estelí, Nicaragua. Escúchanos en vivo, descarga nuestra app y síguenos en redes sociales.
+
+# --- RC Radio 107.7 FM
+inicio_esteli_nicaragua: Estelí · Nicaragua
+hero_title: RC Radio *107.7 FM*
+hero_lead: Óyele... estás en la RC. La emisora que te acompaña todos los días con la mejor música, entretenimiento e información.
+inicio_boton_escuchar: ▶ Escúchanos en Vivo
+inicio_boton_programacion: Ver Programación
+
+# --- Escúchanos En Vivo
+inicio_titulo_en_vivo: Escúchanos *En Vivo*
+inicio_sintoniza_la_senal_en: Sintoniza la señal en línea las 24 horas, o míranos en directo desde nuestro canal de Twitch.
+inicio_reproductor_titulo: RC Radio En Vivo
+inicio_reproductor_volumen: VOLUMEN
+inicio_twitch_titulo: RC RADIO *EN VIVO*
+
+# --- Descarga nuestra App
+inicio_descarga_nuestra_app: Descarga *nuestra App*
+inicio_lleva_la_rc_contigo: Lleva la RC contigo a todas partes. Disponible para dispositivos Android.
+inicio_boton_apk: Descargar APK
+
+# --- Síguenos en nuestras Redes Sociales
+inicio_siguenos_en_nuestras_redes: Síguenos en nuestras *Redes Sociales*
+inicio_buscanos_como_rc_radio: Búscanos como RC Radio Oficial y mantente al día con nuestras novedades.
+
+# ======================================================================
+# PÁGINA: SOBRE NOSOTROS
+# ======================================================================
+
+# --- Título de la pestaña y descripción para buscadores
+titulo_nosotros: RC Radio 107.7 FM Estelí — Sobre Nosotros
+descripcion_nosotros: Conoce a RC Radio 107.7 FM, más de 28 años siendo el centro de comunicación líder en Estelí, Nicaragua.
+
+# --- Sobre Nosotros
+nosotros_sobre_nosotros: Sobre *Nosotros*
+
+# --- Somos RC Radio
+about_title: Somos *RC Radio*
+nosotros_oyele_estas_en_la: Óyele... estás en la RC.
+about_text: Somos un centro de comunicación, los mejores especialistas en radio y redes sociales en Estelí, con más de 28 años de experiencia en radio y presencia en redes sociales, lo que demuestra nuestra voluntad de estar siempre cerca de vos.
+nosotros_sintonizanos_en_la_frecuencia: Sintonízanos en la frecuencia 107.7 FM en Estelí, Nicaragua, o escúchanos en línea a través de TuneIn Radio y MyTuner Radio. También estamos en Facebook, Instagram y TikTok; búscanos como RC Radio Oficial.
+nosotros_somos_la_eleccion_de: Somos la elección de miles de oyentes, porque la excelencia es nuestra prioridad.
+
+# --- Nuestro Equipo  (las personas del carrusel se editan en equipo.txt)
+nosotros_nuestro_equipo: Nuestro *Equipo*
+nosotros_los_rostros_y_voces: Los rostros y voces que hacen posible la RC.
+
+# ======================================================================
+# PÁGINA: PROGRAMACIÓN
+# ======================================================================
+
+# --- Título de la pestaña y descripción para buscadores
+titulo_programacion: RC Radio 107.7 FM Estelí — Programación
+descripcion_programacion: Programación estelar de RC Radio 107.7 FM: Ke Mañana, La Autoridad Grupera, Zona Urbana: Bajo Cero y Las más Chulonas de la RC.
+
+# --- Programación Estelar
+programacion_programacion_estelar: Programación *Estelar*
+programacion_estos_son_los_programas: Estos son los programas que nos acompañan cada día en la 107.7 FM.
+
+# --- Parrilla semanal
+programacion_parrilla_semanal: Parrilla *semanal*
+programacion_horarios_de_nuestra_programacion: Horarios de nuestra programación de lunes a domingo.
+programacion_lunes_a_viernes: Lunes a Viernes
+programacion_sabado: Sábado
+programacion_domingo: Domingo
+
+# --- Audios Destacados (los audios se editan desde el panel: Listas → Audios)
+programacion_audios_destacados: Audios *Destacados*
+programacion_escucha_las_presentaciones_y: Escucha las presentaciones y locuciones de nuestros programas.
+
+# --- Team RC Music
+programacion_team_rc_music: Team *RC Music*
+programacion_nuestra_musica_en_spotify: Nuestra música en Spotify.
+
+# ======================================================================
+# PÁGINA: CONTACTO
+# ======================================================================
+
+# --- Título de la pestaña y descripción para buscadores
+titulo_contacto: RC Radio 107.7 FM Estelí — Contacto
+descripcion_contacto: Contacta con RC Radio 107.7 FM en Estelí, Nicaragua: correo, teléfonos de cabina, negocios, redes sociales y ubicación.
+
+# --- Contáctanos
+contacto_contactanos: Contáctanos
+contacto_estamos_para_atenderte_comunicate: Estamos para atenderte. Comunicate con nosotros por cualquiera de estos medios.
+
+# --- Datos de contacto
+contacto_correo: Correo
+contacto_contacto_rcradio1077_com: contacto@rcradio1077.com
+contacto_direccion: Dirección
+contacto_ministerio_del_interior_1: Ministerio del Interior 1/2c al este. Estelí, Nicaragua.
+contacto_numeros_en_cabina: Números en Cabina
+contacto_telefono_505_2713_3308: Teléfono: +505 2713-3308
+contacto_whatsapp_505_5707_3840: Whatsapp: +505 5707-3840
+contacto_negocios: Negocios
+contacto_cel_505_5757_2455: Cel: +505 5757-2455
+
+# --- Redes Sociales
+contacto_redes_sociales: Redes *Sociales*
+contacto_buscanos_como_rc_radio: Búscanos como RC Radio Oficial en nuestras plataformas.
+
+# --- Nuestra Ubicación
+contacto_nuestra_ubicacion: Nuestra *Ubicación*
+contacto_ministerio_del_interior_1_2: Ministerio del Interior 1/2c al este. Estelí, Nicaragua.
+contacto_abrir_en_google_maps: Abrir en Google Maps
+
+# ======================================================================
+# PÁGINA: 404 (cuando alguien escribe una dirección que no existe)
+# ======================================================================
+titulo_404: Página no encontrada — RC Radio 107.7 FM
+pagina404_titulo: Se perdió la *señal*
+pagina404_texto: La página que buscas no existe o fue movida. Mientras tanto, la radio sigue sonando.
+pagina404_boton_inicio: Volver al inicio
+pagina404_boton_programacion: Ver programación
+
+# ======================================================================
+# IMÁGENES DEL SITIO  (se cambian desde el panel de administración)
+# ======================================================================
+img_logo: assets/img/Icono nuevo RC Radio_redondeado_2-2.png
+
+# ======================================================================
+# PARRILLA SEMANAL (tabla de Programación Y el texto «Estás escuchando» del reproductor)
+# ======================================================================
+# Formato de cada línea:  HH:MM-HH:MM | Nombre del programa
+# Cada bloque empieza con su nombre entre corchetes. Puedes agregar, quitar o cambiar líneas.
+# [horario_viernes] son programas EXTRA que solo se emiten los viernes (se muestran con «(Viernes)»).
+
+# Lunes a Viernes
+[horario_semana]
+05:00-06:00 | El Amanesquero
+06:00-08:00 | Solo Éxitos de la RC
+08:00-11:00 | Revista Ke Mañana
+11:00-13:00 | Autoridad Grupera
+13:00-14:00 | Pegaditas 1077
+14:00-17:00 | Zona Urbana: Bajo Cero
+17:00-19:00 | Las más Chulonas de la RC
+19:00-20:00 | Baladas en Español
+20:00-23:00 | Retro de Noche
+
+# Solo viernes
+[horario_viernes]
+09:00-10:00 | El INNS con Vos
+11:00-11:30 | Fem en Acción
+
+# Sábado
+[horario_sabado]
+05:00-08:00 | Solo Éxitos de la RC
+08:00-12:00 | Delivery RC
+12:00-13:00 | Pegaditas 1077
+13:00-14:00 | El INNS con Vos
+14:00-17:00 | Último Hit
+17:00-19:00 | Las más Chulonas de la RC
+19:00-20:00 | Bachata Mix
+20:00-23:59 | Retro de Noche
+
+# Domingo
+[horario_domingo]
+08:00-09:00 | Activado 60 Segundos
+09:00-11:00 | Ruta de Sandino
+11:00-13:00 | Doble contra Sencillo
+13:00-14:00 | Pegaditas 1077
+14:00-17:00 | Set de la RC
+17:00-19:00 | Las más Chulonas de la RC
+19:00-20:00 | Bachata Mix
+20:00-23:59 | Retro de Noche
+
+# ======================================================================
+# OTROS DATOS (se editan desde el panel: pestaña Avanzado → Enlaces y datos)
+# ======================================================================
+twitch_canal: rcradiooficial
+spotify_embed: https://open.spotify.com/embed/artist/4d3hPRDegG65mXOTVCmA1J?utm_source=generator&theme=0
+mapa_embed: https://www.google.com/maps?q=13.088212,-86.354348&z=18&output=embed
+mapa_enlace: https://www.google.com/maps/search/?api=1&query=13.088212,-86.354348
+
+# ======================================================================
+# PROGRAMAS (tarjetas de la página Programación)
+# ======================================================================
+# Formato:  imagen | Nombre | Horario | Descripción | etiqueta1; etiqueta2; etiqueta3
+[programas]
+assets/img/Ke Mañana.png | Ke Mañana | Lunes a Viernes | 8 AM - 11 AM | Revista matutina con farándula, moda, tecnología, música y emprendimiento. La mejor energía para iniciar tu día.
+assets/img/Autoridad Grupera.png | La Autoridad Grupera | Lunes a Viernes | 11 AM - 1 PM | Programa de música ranchera, grupera y banda, dirigido a los trabajadores de la empresa tabacalera, con saludos y videos, complacencias y reacciones compartidas en redes.
+assets/img/Zona Urbana_Bajo_Cero.png | Zona Urbana: Bajo Cero | Lunes a Viernes | 2 PM - 5 PM | Programa juvenil enfocado en música urbana, entretenimiento y participación activa de la audiencia a través de llamadas en vivo.
+assets/img/Las más Chulonas de la RC.png | Las más Chulonas de la RC | Lunes a Domingos | 5 AM - 8 PM | Programa de música ranchera grupera y banda, actualizado con nuevos éxitos y clásicos del género. Incluye llamadas en vivo de los oyentes para dedicar canciones y compartir historias.
+
+# ======================================================================
+# AUDIOS DESTACADOS
+# ======================================================================
+# Formato:  Título | Subtítulo | enlace al .mp3
+[audios]
+K Mañana | Presentación | https://www.dropbox.com/scl/fi/gwuuznb20pqs8fqbnhcb1/Presentacion-K-Ma-ana.mp3?rlkey=7maka2t05027sbjv7fkaux8t5&st=ui6zbbcc&raw=1
+K Mañana | Locución | https://www.dropbox.com/scl/fi/b6v5njaxt8a20fkepbzxk/Locucion-bienvenida-Ke-Ma-ana.mp3?rlkey=7bjeob0455ziudb2azywhijij&st=6cdcyctu&raw=1
+Zona Urbana: Bajo Cero | Presentación | https://www.dropbox.com/scl/fi/kyuwf0oyb13ka7rumjib6/Presentaci-n_y_Despedida_Zona-Urbana-Bajo-Cero.mp3?rlkey=qw5u9gu4xivz7axiq7gcaid8g&st=chftpiya&raw=1
+Zona Urbana | Locución | https://www.dropbox.com/scl/fi/68341dla64rdiknsixb34/Locuci-n-Zona-Urbana.mp3?rlkey=ra3oin2g1srmdqc6gacybyfv7&st=fro7fabz&dl=6cdcyctu&raw=1
+
+
+# --- Añadido desde el panel
+programacion_la_autoridad_grupera: La Autoridad Grupera
+programacion_lunes_a_domingos_5: Lunes a Domingos / 5 PM - 8 PM

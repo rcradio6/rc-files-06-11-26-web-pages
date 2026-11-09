@@ -1,0 +1,2 @@
+# Página de error 404 con el estilo del sitio (servidores Apache)
+ErrorDocument 404 /404.html

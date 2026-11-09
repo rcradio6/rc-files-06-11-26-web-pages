@@ -1,0 +1,12 @@
+# ==========================================================================
+#  RC RADIO 107.7 FM — EQUIPO (carrusel de «Sobre Nosotros»)
+#  Lo edita el panel de administración (Listas → Equipo). Formato de cada línea:
+#      archivo-de-la-foto.png | Nombre | Cargo
+#  La foto va en la carpeta assets/img. El orden del carrusel es el de las líneas.
+# ==========================================================================
+
+1 - Karina Rodriguez - Directora.png | Karina Rodriguez | Directora
+2 - Freddy Herrera -  Editor.png | Freddy Herrera | Editor
+3 - Mary Ruíz - Locutora y Controlista.png | Mary Ruíz | Locutora y Controlista
+4 - Kener Blandón - Locutor y Controlista.png | Kener Blandón | Locutor y Controlista
+5 - Brenda Urrutia - Locutora y Controlista.png | Brenda Urrutia | Locutora y Controlista

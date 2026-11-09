@@ -1,0 +1,129 @@
+/* ==========================================================================
+   Ambiente navideño — luces decorativas (RC Radio 107.7 FM)
+   Para quitarlas: borra el <link> a navidad.css y el <script> navidad.js
+   de las páginas HTML (o deja que se apaguen solas, ver navidad.js).
+   ========================================================================== */
+
+/* El footer necesita ser referencia para colgar las luces de su borde superior */
+.site-footer { position: relative; }
+
+/* El menú móvil desplegable siempre queda por encima de las luces */
+.site-header .nav-links { z-index: 3; }
+
+.xmas-lights {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 100%;            /* header: cuelgan justo debajo */
+  height: 0;
+  z-index: 1;
+  pointer-events: none; /* solo las bombillas reciben el ratón/dedo */
+  -webkit-user-select: none;
+  user-select: none;
+}
+.site-footer > .xmas-lights { top: 0; } /* footer: cuelgan desde su borde superior */
+
+.xmas-wire {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  overflow: visible;
+}
+.xmas-wire path { fill: none; stroke: #1f7a43; stroke-width: 2; stroke-linecap: round; }
+.xmas-wire circle { fill: #2c8a52; }
+
+.xmas-bulbs { position: absolute; left: 0; top: 0; width: 100%; height: 0; }
+
+/* ----------------------------------------------------------------- Bombilla */
+.xb {
+  position: absolute;
+  width: 18px;
+  height: 32px;
+  margin-left: -9px;
+  pointer-events: auto;
+  transform-origin: 50% 0;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* casquillo */
+.xb::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: -1px;
+  width: 7px;
+  height: 8px;
+  margin-left: -3.5px;
+  border-radius: 2px 2px 1px 1px;
+  background: linear-gradient(90deg, #0d3b1f, #2c8a52 50%, #0d3b1f);
+}
+
+/* cristal */
+.xb i {
+  position: absolute;
+  left: 50%;
+  top: 6px;
+  width: 11px;
+  height: 17px;
+  margin-left: -5.5px;
+  border-radius: 50% 50% 50% 50% / 38% 38% 62% 62%;
+  background: radial-gradient(circle at 36% 30%, rgba(255, 255, 255, .85) 0, var(--c) 45%, var(--c) 100%);
+  box-shadow: inset -2px -3px 4px rgba(0, 0, 0, .28);
+  animation: xmas-bulb 2.4s ease-in-out var(--d, 0s) infinite;
+}
+
+/* resplandor (solo se anima opacidad/escala: barato para el navegador) */
+.xb::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: -3px;
+  width: 44px;
+  height: 44px;
+  margin-left: -22px;
+  border-radius: 50%;
+  background: radial-gradient(circle, var(--c) 0%, transparent 68%);
+  opacity: .6;
+  z-index: -1;
+  pointer-events: none;
+  animation: xmas-glow 2.4s ease-in-out var(--d, 0s) infinite;
+}
+
+/* ---------------------------------------------------------------- Animaciones */
+@keyframes xmas-bulb {
+  0%, 100% { opacity: 1; }
+  50%      { opacity: .55; }
+}
+@keyframes xmas-glow {
+  0%, 100% { opacity: .6; transform: scale(1); }
+  50%      { opacity: .12; transform: scale(.8); }
+}
+@keyframes xmas-swing {
+  0%   { transform: rotate(0); }
+  20%  { transform: rotate(calc(16deg * var(--sg, 1))); }
+  45%  { transform: rotate(calc(-10deg * var(--sg, 1))); }
+  70%  { transform: rotate(calc(4deg * var(--sg, 1))); }
+  100% { transform: rotate(0); }
+}
+@keyframes xmas-flash {
+  0%   { opacity: 1; transform: scale(1.9); }
+  100% { opacity: .6; transform: scale(1); }
+}
+
+.xb.swing { animation: xmas-swing .9s ease-out var(--s, 0s); }
+.xb.pop::after { animation: xmas-flash .6s ease-out; }
+
+/* ------------------------------------------------------------------- Móviles */
+@media (max-width: 640px) {
+  .xb { width: 14px; height: 26px; margin-left: -7px; }
+  .xb::before { width: 6px; height: 7px; margin-left: -3px; }
+  .xb i { width: 9px; height: 14px; margin-left: -4.5px; top: 5px; }
+  .xb::after { width: 34px; height: 34px; margin-left: -17px; }
+}
+
+/* ---------------------------------------------------- Accesibilidad / ahorro */
+@media (prefers-reduced-motion: reduce) {
+  .xb i, .xb::after, .xb.swing, .xb.pop::after { animation: none; }
+}
+@media print { .xmas-lights { display: none; } }
