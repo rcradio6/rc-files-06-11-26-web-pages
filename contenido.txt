@@ -242,10 +242,10 @@ mapa_enlace: https://www.google.com/maps/search/?api=1&query=13.088212,-86.35434
 # ======================================================================
 # Formato:  imagen | Nombre | Horario | Descripción | etiqueta1; etiqueta2; etiqueta3
 [programas]
-assets/img/Ke Mañana.png | Ke Mañana | Lunes a Viernes | 8 AM - 11 AM | Revista matutina con farándula, moda, tecnología, música y emprendimiento. La mejor energía para iniciar tu día.
-assets/img/Autoridad Grupera.png | La Autoridad Grupera | Lunes a Viernes | 11 AM - 1 PM | Programa de música ranchera, grupera y banda, dirigido a los trabajadores de la empresa tabacalera, con saludos y videos, complacencias y reacciones compartidas en redes.
-assets/img/Zona Urbana_Bajo_Cero.png | Zona Urbana: Bajo Cero | Lunes a Viernes | 2 PM - 5 PM | Programa juvenil enfocado en música urbana, entretenimiento y participación activa de la audiencia a través de llamadas en vivo.
-assets/img/Las más Chulonas de la RC.png | Las más Chulonas de la RC | Lunes a Domingos | 5 AM - 8 PM | Programa de música ranchera grupera y banda, actualizado con nuevos éxitos y clásicos del género. Incluye llamadas en vivo de los oyentes para dedicar canciones y compartir historias.
+assets/img/Ke Mañana.webp | Ke Mañana | Lunes a Viernes | 8 AM - 11 AM | Revista matutina con farándula, moda, tecnología, música y emprendimiento. La mejor energía para iniciar tu día.
+assets/img/Autoridad Grupera.webp | La Autoridad Grupera | Lunes a Viernes | 11 AM - 1 PM | Programa de música ranchera, grupera y banda, dirigido a los trabajadores de la empresa tabacalera, con saludos y videos, complacencias y reacciones compartidas en redes.
+assets/img/Zona Urbana_Bajo_Cero.webp | Zona Urbana: Bajo Cero | Lunes a Viernes | 2 PM - 5 PM | Programa juvenil enfocado en música urbana, entretenimiento y participación activa de la audiencia a través de llamadas en vivo.
+assets/img/Las más Chulonas de la RC.webp | Las más Chulonas de la RC | Lunes a Domingos | 5 PM - 7 PM | Programa de música ranchera grupera y banda, actualizado con nuevos éxitos y clásicos del género. Incluye llamadas en vivo de los oyentes para dedicar canciones y compartir historias.
 
 # ======================================================================
 # AUDIOS DESTACADOS
