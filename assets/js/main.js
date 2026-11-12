@@ -829,13 +829,19 @@
     if (a.target && a.target !== "_self") return false;
     if (a.hasAttribute("download")) return false;
     if (a.protocol !== location.protocol || a.host !== location.host) return false;
-    return /(\.html?|\/)$/.test(a.pathname) || a.pathname === "";
+    // páginas: /inicio, /programacion, /x.html o carpetas; todo lo que tenga otra extensión (apk, png…) NO es página
+    return /(\.html?|\/)$/.test(a.pathname) || a.pathname === "" || !/\.[A-Za-z0-9]+$/.test(a.pathname);
+  }
+
+  function normPath(p) {
+    p = p.replace(/\.html?$/, "").replace(/\/+$/, "").replace(/\/index$/, "/inicio");
+    return p === "" ? "/inicio" : p;
   }
 
   function updateNavActive(url) {
-    var path = new URL(url, location.href).pathname.replace(/\/$/, "/index.html");
+    var path = normPath(new URL(url, location.href).pathname);
     document.querySelectorAll(".nav-links a").forEach(function (link) {
-      var lp = new URL(link.href).pathname.replace(/\/$/, "/index.html");
+      var lp = normPath(new URL(link.href).pathname);
       link.classList.toggle("active", lp === path);
     });
   }

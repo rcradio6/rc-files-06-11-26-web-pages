@@ -1,2 +1,33 @@
-# Página de error 404 con el estilo del sitio (servidores Apache)
+# ==========================================================================
+#  RC Radio 107.7 FM — URLs limpias (sin .html)   https://www.rcradio1077.com/inicio
+#  Requiere Apache con mod_rewrite (lo trae casi todo hosting).
+# ==========================================================================
+Options -MultiViews
+DirectoryIndex index.html
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+
+# La raíz del sitio muestra /inicio
+RewriteRule ^$ /inicio [R=301,L]
+
+# /index.html  ->  /inicio
+RewriteCond %{THE_REQUEST} \s/index\.html[\s?]
+RewriteRule ^index\.html$ /inicio [R=301,L]
+
+# /programacion.html  ->  /programacion   (y lo mismo con las demás páginas)
+RewriteCond %{THE_REQUEST} \s/[^\s?]+\.html[\s?]
+RewriteRule ^(?!404\.html$)(.+)\.html$ /$1 [R=301,L]
+
+# /inicio/  ->  /inicio   (sin barra final, para que las rutas relativas no se rompan)
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.+)/$ /$1 [R=301,L]
+
+# Por dentro:  /inicio -> index.html ,  /programacion -> programacion.html
+RewriteRule ^inicio$ index.html [L]
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^([^./]+)$ $1.html [L]
+</IfModule>
+
+# Página de error 404 con el estilo del sitio
 ErrorDocument 404 /404.html
