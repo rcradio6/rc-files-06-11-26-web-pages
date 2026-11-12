@@ -1,3 +1,5 @@
-/* RC-TEMA {"tamano":20} */
+/* RC-TEMA {"tamano":20,"luces":false,"burbujas":false} */
 /* Este archivo lo genera el panel de administración (pestaña Diseño). Vacío = diseño original. */
 :root{--font-size:20px}
+.liquid-blob{display:none!important}
+.xmas-lights{display:none!important}

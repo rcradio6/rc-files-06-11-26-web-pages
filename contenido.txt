@@ -48,6 +48,7 @@ enlace_facebook: https://www.facebook.com/rc1077
 enlace_instagram: https://www.instagram.com/rcradio_oficial107.7/
 enlace_tiktok: https://www.tiktok.com/@rc.radio.107.7.fm
 enlace_youtube: https://www.youtube.com/@RCRADIO107.7FM
+enlace_twitch: https://www.twitch.tv/rcradiooficial
 enlace_correo: mailto:contacto@rcradio1077.com
 enlace_telefono_cabina: tel:+505 2713-3308
 enlace_celular_cabina: tel:+505 5707-3840
@@ -75,10 +76,9 @@ inicio_boton_programacion: Ver Programación
 
 # --- Escúchanos En Vivo
 inicio_titulo_en_vivo: Escúchanos *En Vivo*
-inicio_sintoniza_la_senal_en: Sintoniza la señal en línea las 24 horas, o míranos en directo desde nuestro canal de Twitch.
-inicio_reproductor_titulo: RC Radio En Vivo
+inicio_sintoniza_la_senal_en: Sintoniza nuestra señal en línea las 24 horas, estés donde estés.
+inicio_reproductor_titulo: RC Radio 107.7 FM
 inicio_reproductor_volumen: VOLUMEN
-inicio_twitch_titulo: RC RADIO *EN VIVO*
 
 # --- Descarga nuestra App
 inicio_descarga_nuestra_app: Descarga *nuestra App*
@@ -233,7 +233,6 @@ img_logo: assets/img/Icono nuevo RC Radio_redondeado_2-2.png
 # ======================================================================
 # OTROS DATOS (se editan desde el panel: pestaña Avanzado → Enlaces y datos)
 # ======================================================================
-twitch_canal: rcradiooficial
 spotify_embed: https://open.spotify.com/embed/artist/4d3hPRDegG65mXOTVCmA1J?utm_source=generator&theme=0
 mapa_embed: https://www.google.com/maps?q=13.088212,-86.354348&z=18&output=embed
 mapa_enlace: https://www.google.com/maps/search/?api=1&query=13.088212,-86.354348

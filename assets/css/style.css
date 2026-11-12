@@ -224,7 +224,7 @@ h1, h2, h3, h4 {
   margin-top: 40px;
 }
 
-.player-v2, .twitch-v2 {
+.player-v2, .twitch-v2, .app-v2 {
   background: #0a0a0c;
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 24px;
@@ -241,14 +241,14 @@ h1, h2, h3, h4 {
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5), inset 0 0 40px rgba(var(--red-rgb), 0.05);
 }
 
-.player-v2-header, .twitch-v2-header {
+.player-v2-header, .twitch-v2-header, .app-v2-header {
   display: flex;
   align-items: center;
   gap: 15px;
   margin-bottom: 25px;
 }
 
-.player-v2-header h3, .twitch-v2-header h3 {
+.player-v2-header h3, .twitch-v2-header h3, .app-v2-header h3 {
   margin: 0;
   font-size: 22px;
   font-weight: 900;
@@ -817,7 +817,7 @@ html { background: var(--fondo-html); }
 }
 
 /* --- Liquid glass en toda la web --- */
-.site-header, .player-v2, .twitch-v2, .contact-card, .program-card, .schedule-col,
+.site-header, .player-v2, .twitch-v2, .app-v2, .contact-card, .program-card, .schedule-col,
 .audio-card, .map, .floating-player, .status-pill, .site-footer {
   background: var(--glass);
   -webkit-backdrop-filter: blur(var(--blur)) saturate(170%);
@@ -838,13 +838,13 @@ html { background: var(--fondo-html); }
 .status-pill { box-shadow: inset 0 1px 0 rgba(255,255,255,.12); }
 
 /* brillo especular */
-.player-v2::before, .twitch-v2::before, .contact-card::before, .program-card::before,
+.player-v2::before, .twitch-v2::before, .app-v2::before, .contact-card::before, .program-card::before,
 .schedule-col::before, .audio-card::before {
   content: ""; position: absolute; inset: 0; border-radius: inherit; pointer-events: none; z-index: 1;
   background: linear-gradient(120deg, rgba(255,255,255,.14) 0%, transparent 32%, transparent 70%, rgba(255,255,255,.05) 100%);
 }
 .contact-card, .program-card, .schedule-col, .audio-card { position: relative; }
-.player-v2 > *, .twitch-v2 > * { position: relative; z-index: 2; }
+.player-v2 > *, .twitch-v2 > *, .app-v2 > * { position: relative; z-index: 2; }
 
 /* botones y redes con vidrio */
 .btn-ghost { background: rgba(255,255,255,.06); -webkit-backdrop-filter: blur(12px); backdrop-filter: blur(12px); border-color: rgba(255,255,255,.22); box-shadow: inset 0 1px 0 rgba(255,255,255,.2); }
@@ -906,7 +906,7 @@ p { text-wrap: pretty; }
 .player-v2.is-idle .player-v2-visualizer { max-height: 0; margin: 0; opacity: 0; }
 .player-v2.is-idle .play-btn-v2 { width: 60px; height: 60px; }
 .play-btn-v2 { transition: width .4s ease, height .4s ease, transform .3s cubic-bezier(.175,.885,.32,1.275), box-shadow .3s; }
-.player-v2-header h3, .twitch-v2-header h3 { letter-spacing: .05em; }
+.player-v2-header h3, .twitch-v2-header h3, .app-v2-header h3 { letter-spacing: .05em; }
 
 /* --- Carrusel infinito (transform en GPU, 60 fps) --- */
 .staff-carousel {
@@ -941,7 +941,7 @@ p { text-wrap: pretty; }
 #pjax-container { transition: opacity .18s ease, transform .18s ease; }
 
 @media (max-width: 600px) {
-  .player-v2, .twitch-v2 { padding: 22px; }
+  .player-v2, .twitch-v2, .app-v2 { padding: 22px; }
   .player-v2-visualizer { height: 140px; max-height: 140px; }
   .map { height: 380px; border-radius: 18px; }
 }
@@ -1017,7 +1017,7 @@ a, button, .btn, input { touch-action: manipulation; }
 img { max-width: 100%; }
 
 /* --- Twitch: siempre 16:9, ocupa el ancho de su tarjeta --- */
-.player-v2, .twitch-v2 { min-width: 0; }
+.player-v2, .twitch-v2, .app-v2 { min-width: 0; }
 .twitch-v2-content { flex: 1; display: flex; align-items: center; min-width: 0; }
 .twitch-v2-frame { position: relative; width: 100%; flex: none; aspect-ratio: 16 / 9; min-height: 0; }
 .twitch-v2-frame iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; display: block; }
@@ -1051,7 +1051,7 @@ img { max-width: 100%; }
   .staff-card { flex-basis: 240px; }
   .btn { padding: 13px 20px; }
   .nf-actions .btn { width: 100%; max-width: 320px; }
-  .player-v2, .twitch-v2 { border-radius: 20px; }
+  .player-v2, .twitch-v2, .app-v2 { border-radius: 20px; }
 }
 @media (hover: none) and (pointer: coarse) {
   .btn, .nav-links a, .tag { min-height: 40px; }
@@ -1120,3 +1120,15 @@ h1, h2, h3, h4, .brand, .footer-brand, .mini-title, .brand *, .footer-brand *, h
 /* Etiquetas y botones: texto centrado verticalmente aunque tengan altura mínima táctil */
 .tag, .btn, .nav-links a { display: inline-flex; align-items: center; justify-content: center; }
 .nav-links a { justify-content: flex-start; }
+
+
+/* ==========================================================================
+   Tarjeta «Descarga nuestra App» (junto al reproductor) y botón de Twitch
+   ========================================================================== */
+.live-grid-v2 { grid-template-columns: 1.4fr 1fr; align-items: stretch; }
+.app-v2 { justify-content: center; align-items: flex-start; gap: 6px; }
+.app-v2-header h3 span { color: var(--red); }
+.app-v2-text { margin: 0 0 22px; color: var(--muted); line-height: 1.6; max-width: 420px; }
+.app-v2 .btn { align-self: flex-start; }
+.social a .social-twitch { width: 24px; height: 24px; display: block; }
+@media (max-width: 980px) { .live-grid-v2 { grid-template-columns: 1fr; } }
