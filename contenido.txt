@@ -69,7 +69,7 @@ descripcion_inicio: RC Radio 107.7 FM, Estelí, Nicaragua. Escúchanos en vivo, 
 
 # --- RC Radio 107.7 FM
 inicio_esteli_nicaragua: Estelí · Nicaragua
-hero_title: RC Radio *107.7 FM*
+hero_title: {#e50914:{#ffffff:RC Radio}} *{#e50914:107.7 FM}*
 hero_lead: Óyele... estás en la RC. La emisora que te acompaña todos los días con la mejor música, entretenimiento e información.
 inicio_boton_escuchar: ▶ Escúchanos en Vivo
 inicio_boton_programacion: Ver Programación
@@ -126,9 +126,9 @@ programacion_estos_son_los_programas: Estos son los programas que nos acompañan
 # --- Parrilla semanal
 programacion_parrilla_semanal: Parrilla *semanal*
 programacion_horarios_de_nuestra_programacion: Horarios de nuestra programación de lunes a domingo.
-programacion_lunes_a_viernes: Lunes a Viernes
-programacion_sabado: Sábado
-programacion_domingo: Domingo
+programacion_lunes_a_viernes: {#ffffff:Lunes a Viernes}
+programacion_sabado: {#ffffff:Sábado}
+programacion_domingo: {#ffffff:Domingo}
 
 # --- Audios Destacados (los audios se editan desde el panel: Listas → Audios)
 programacion_audios_destacados: Audios *Destacados*
@@ -151,14 +151,14 @@ contacto_contactanos: Contáctanos
 contacto_estamos_para_atenderte_comunicate: Estamos para atenderte. Comunicate con nosotros por cualquiera de estos medios.
 
 # --- Datos de contacto
-contacto_correo: Correo
+contacto_correo: {#ffffff:Correo}
 contacto_contacto_rcradio1077_com: contacto@rcradio1077.com
-contacto_direccion: Dirección
+contacto_direccion: {#ffffff:Dirección}
 contacto_ministerio_del_interior_1: Ministerio del Interior 1/2c al este. Estelí, Nicaragua.
-contacto_numeros_en_cabina: Números en Cabina
+contacto_numeros_en_cabina: {#ffffff:Números en Cabina}
 contacto_telefono_505_2713_3308: Teléfono: +505 2713-3308
 contacto_whatsapp_505_5707_3840: Whatsapp: +505 5707-3840
-contacto_negocios: Negocios
+contacto_negocios: {#ffffff:Negocios}
 contacto_cel_505_5757_2455: Cel: +505 5757-2455
 
 # --- Redes Sociales

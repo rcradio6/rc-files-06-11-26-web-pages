@@ -5,8 +5,9 @@
 #  La foto va en la carpeta assets/img. El orden del carrusel es el de las líneas.
 # ==========================================================================
 
-1 - Karina Rodriguez - Directora.png | Karina Rodriguez | Directora
-2 - Freddy Herrera -  Editor.png | Freddy Herrera | Editor
-3 - Mary Ruíz - Locutora y Controlista.png | Mary Ruíz | Locutora y Controlista
-4 - Kener Blandón - Locutor y Controlista.png | Kener Blandón | Locutor y Controlista
-5 - Brenda Urrutia - Locutora y Controlista.png | Brenda Urrutia | Locutora y Controlista
+1_Kary.png | Karina Rodriguez | Directora
+6_Freddy-2.png | Freddy Herrera | Editor y Técnico
+3_Mary Ruíz.png | Mary Ruíz | Locutora y Controlista
+2_Kener Blandón.png | Kener Blandón | Locutor y Controlista
+5_Brenda.png | Brenda Urrutia | Locutora y Controlista
+7_Carlos.png | Carlos Salgado | Controlista y Técnico

@@ -1,3 +1,4 @@
-/* RC-TEMA {"tamano":20} */
+/* RC-TEMA {"tamano":20,"contornoAncho":0,"burbujas":false,"fondoArriba":"#420008","fondoAbajo":"#190000"} */
 /* Este archivo lo genera el panel de administración (pestaña Diseño). Vacío = diseño original. */
-:root{--font-size:20px}
+:root{--fondo-arriba:#420008;--fondo-abajo:#190000;--fondo-html:#190000;--contorno-ancho:0px;--contorno-fino:0.0px;--font-size:20px}
+.liquid-blob{display:none!important}

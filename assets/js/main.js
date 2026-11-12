@@ -167,8 +167,18 @@
     return t.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
   }
   // *palabra* → <span>palabra</span> (se pinta de rojo según el estilo)
-  function richHtml(v) { return esc(v).replace(/\*([^*]+)\*/g, "<span>$1</span>"); }
-  function plain(v) { return v.replace(/\*/g, ""); }
+  // {#ff0000:palabra} → palabra con ese color (cualquier color, por partes o todo el texto)
+  var COLOR_RE = /\{(#[0-9a-fA-F]{3,8}):([^{}]*)\}/g;
+  function richHtml(v) {
+    var h = esc(v), prev;
+    do { prev = h; h = h.replace(COLOR_RE, '<span style="color:$1">$2</span>'); } while (h !== prev);
+    return h.replace(/\*([^*]+)\*/g, "<span>$1</span>");
+  }
+  function plain(v) {
+    var h = v, prev;
+    do { prev = h; h = h.replace(COLOR_RE, "$2"); } while (h !== prev);
+    return h.replace(/\*/g, "");
+  }
 
   function sortByStart(list) {
     return list.slice().sort(function (a, b) { return a.start < b.start ? -1 : a.start > b.start ? 1 : 0; });
