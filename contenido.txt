@@ -53,7 +53,7 @@ enlace_correo: mailto:contacto@rcradio1077.com
 enlace_telefono_cabina: tel:+505 2713-3308
 enlace_celular_cabina: tel:+505 5707-3840
 enlace_whatsapp: https://api.whatsapp.com/send/?phone=50557073840
-enlace_celular_negocios: tel:+505 5757-2455
+enlace_celular_negocios: https://api.whatsapp.com/send/?phone=50557572455
 
 # --- Reproductor (texto que se desplaza)
 reproductor_prefijo: Estás escuchando:
